@@ -92,7 +92,7 @@
 // function randomPass() {
 //     let password = '';
 //     let string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-//         'abcdefghijklmnopqrstuvwxyz0123456789';
+//         'abcdefghijklmnopqrstuvwxyz0123456789' ;
  
 //     for (let i = 1; i <= 8; i++) {
 //         let char = Math.floor(Math.random()
@@ -108,10 +108,13 @@
 
 // Q10 .Write a JavaScript function that takes an array of numbers as input and returns the maximum difference between any two numbers in the array.
 
-const numbers1=[3,4,1,9,2,6,7,4,10,8]
-let min=numbers1[0];
-let max=numbers1.length-1;
+var numbers1=[3,4,1,9,2,6,7,5,10,8,30,11]
+var min=numbers1[0];
+var max=numbers1.length-1;
+function difference(numbers1,min,max){
+    
 for(let i=0;i<numbers1.length;i++){
+   
     if(numbers1[i]<min){
         min=numbers1[i]; 
     }
@@ -120,7 +123,27 @@ for(let i=0;i<numbers1.length;i++){
         max=numbers1[i]; 
     }
 }
-console.log(min)
-console.log(max)
-const new1 = max - min
-console.log(new1)
+return min,max, max-min ;
+}
+
+
+// console.log(min)
+// console.log(max)
+console.log("Max difference in an array :",difference(numbers1,min,max))
+
+// var numbers1=[3,4,1,9,2,6,7,5,10,8,30,11]
+// var min=numbers1[0];
+// var max=numbers1.length-1;
+// for(let i=0;i<numbers1.length;i++){
+//     if(numbers1[i]<min){
+//         min=numbers1[i]; 
+//     }
+
+//     if(numbers1[i]>max){
+//         max=numbers1[i]; 
+//     }
+// }
+// console.log(min)
+// console.log(max)
+// var new1 = max - min
+// console.log(new1)
