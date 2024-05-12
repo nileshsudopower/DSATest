@@ -28,7 +28,7 @@
 // let num1 = 1;
 // console.log(num)
 // console.log(num1)
-// const number = 10
+// let number = 10
 // let temp2 = num + num1;
 // while (temp2 <= number) {
 //   console.log(temp2);
@@ -89,38 +89,38 @@
 
 // Q9. Create a JavaScript program that generates a random password of a specified length, consisting of letters (both uppercase and lowercase) and numbers.
 
-function randomPass() {
-    let password = '';
-    let string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-        'abcdefghijklmnopqrstuvwxyz0123456789';
+// function randomPass() {
+//     let password = '';
+//     let string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+//         'abcdefghijklmnopqrstuvwxyz0123456789';
  
-    for (let i = 1; i <= 8; i++) {
-        let char = Math.floor(Math.random()
-            * string.length + 1);
+//     for (let i = 1; i <= 8; i++) {
+//         let char = Math.floor(Math.random()
+//             * string.length + 1);
  
-        password += string.charAt(char)
-    }
+//         password += string.charAt(char)
+//     }
  
-    return password;
-}
+//     return password;
+// }
  
-console.log(randomPass());
+// console.log(randomPass());
 
 // Q10 .Write a JavaScript function that takes an array of numbers as input and returns the maximum difference between any two numbers in the array.
 
-// const numbers1=[1,2,3,4,5,6,7,8,9,10]
-// let min=numbers1[0];
-// let max=numbers1[9];
-// for(let i=0;i<numbers1.length;i++){
-//     if(numbers1[i]<min){
-//         min=numbers1[i]; 
-//     }
+const numbers1=[3,4,1,9,2,6,7,4,10,8]
+let min=numbers1[0];
+let max=numbers1.length-1;
+for(let i=0;i<numbers1.length;i++){
+    if(numbers1[i]<min){
+        min=numbers1[i]; 
+    }
 
-//     if(numbers1[i]>max){
-//         max=numbers1[i]; 
-//     }
-// }
-// console.log(min)
-// console.log(max)
-// const new1 = max - min
-// console.log(new1)
+    if(numbers1[i]>max){
+        max=numbers1[i]; 
+    }
+}
+console.log(min)
+console.log(max)
+const new1 = max - min
+console.log(new1)
